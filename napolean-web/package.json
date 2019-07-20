@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TTWNO/Napolean-web/issues"
   },
-  "homepage": "https://github.com/TTWNO/Napolean-web#readme"
+  "homepage": "https://github.com/TTWNO/Napolean-web#readme",
+  "dependecies": {
+    "express": "^4.17.1"
+  }
 }
