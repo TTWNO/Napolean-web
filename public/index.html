@@ -3,11 +3,12 @@
 		<script>
 			function sendToServer(){
 				var xhttp = new XMLHttpRequest();
-				xhttp.onreadtstatechange = function(){
-					console.log(this.responseText);
-					if (this.status == 200){
-						console.log(this.responseText);
-						document.getElementById("server_response").innerHTML =this.responseText;
+				xhttp.onreadystatechange = function(){
+					if (this.readyState == 4 && this.status == 200){
+						var json = JSON.parse(this.responseText);
+						console.log("Recieved");
+						console.log(json);
+						document.getElementById("server_response").innerHTML = json;
 					}
 				};
 				xhttp.open("POST", "/", true);

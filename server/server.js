@@ -12,7 +12,7 @@ app.use(body_parser.json());
 app.post('/', (req, res) => {
 	console.log("[REQUEST]: " + req.body.messege.toString());
 	res.writeHead(200, {"Content-type": "applicaiton/json"});
-	res.write({"response": "Hello world!"}.toString());
+	res.write("{\"messege\": \"Hello World!\"}");
 	res.send();
 });
 
