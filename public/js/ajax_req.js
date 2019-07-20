@@ -1,3 +1,12 @@
+window.onload = function(){
+	let buttons = document.getElementsByTagName("button");
+	for (let i = 0; i < buttons.length; i++){
+		buttons[i].onclick = function(e){
+			sendToServer(e.currentTarget.getAttribute("command"));
+		}
+	}
+}
+
 function sendToServer(command){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
@@ -11,12 +20,4 @@ function sendToServer(command){
   xhttp.open("POST", "/", true);
   xhttp.setRequestHeader("Content-Type", "application/json");
   xhttp.send("{\"message\": \"Hello world!\", \"command\": \"" + command + "\"}");
-}
-
-function touchLockfile(){
-	sendToServer("touch filelock.lock");
-}
-
-function decreeseBrightness(){
-	sendToServer("xbacklight -dec 10");
 }

@@ -1,10 +1,31 @@
-button {
-  display: block;
-  position: fixed;
+* {
+	display: block;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 50vw;
+	height: 50vh;
+	font-size: 18vh;
+}
+
+.topLeft {
+  background: #1212ff;
+  left: 0%;
+  top: 0%;
+}
+.topRight {
+  background: #ff0000;
+  left: 50%;
+  top: 0%;
+}
+.bottomLeft {
+  background: #00aa00;
+  left: 0%;
+  top: 50%;
+}
+.bottomRight {
   background: #fcba03;
   left: 50%;
   top: 50%;
-  width: 50vw;
-  height: 50vh;
-  font-size: 18vh;
 }
+
