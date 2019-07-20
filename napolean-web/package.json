@@ -1,0 +1,19 @@
+{
+  "name": "napolean-web",
+  "version": "1.0.0",
+  "description": "run commands that come into the server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTWNO/Napolean-web.git"
+  },
+  "author": "Tait Hoyem, Edward Mogos",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/TTWNO/Napolean-web/issues"
+  },
+  "homepage": "https://github.com/TTWNO/Napolean-web#readme"
+}
