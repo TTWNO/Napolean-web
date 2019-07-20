@@ -10,9 +10,9 @@ app.use(express.static(publicPath));
 app.use(body_parser.json());
 
 app.post('/', (req, res) => {
-	console.log("[REQUEST]: " + req.body.messege.toString());
+	console.log("[REQUEST]: " + req.body.message.toString());
 	res.writeHead(200, {"Content-type": "applicaiton/json"});
-	res.write("{\"messege\": \"Hello World!\"}");
+	res.write("{\"message\": \"Hello World!\"}");
 	res.send();
 });
 

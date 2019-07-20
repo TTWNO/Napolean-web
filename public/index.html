@@ -1,25 +1,10 @@
 <html>
 	<head>
-		<script>
-			function sendToServer(){
-				var xhttp = new XMLHttpRequest();
-				xhttp.onreadystatechange = function(){
-					if (this.readyState == 4 && this.status == 200){
-						var json = JSON.parse(this.responseText);
-						console.log("Recieved");
-						console.log(json);
-						document.getElementById("server_response").innerHTML = json;
-					}
-				};
-				xhttp.open("POST", "/", true);
-				xhttp.setRequestHeader("Content-Type", "application/json");
-				xhttp.send("{\"messege\": \"Hello world!\"}");
-			}
-		</script>
+		<script src="ajax_req.js"></script>
 	</head>
 	<body>
 		<h1>Hello world!</h1>
-		<button href="#" onclick="sendToServer()">Send "Hello world!" to servcer!</button>
+		<button href="#" onclick="sendToServer()">Send "Hello world!" to server!</button>
 		<div id="server_response">...Server response</div>
 	</body>
 </html>
