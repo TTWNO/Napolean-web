@@ -18,5 +18,8 @@
   "homepage": "https://github.com/TTWNO/Napolean-web#readme",
   "dependecies": {
     "express": "^4.17.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0"
   }
 }
