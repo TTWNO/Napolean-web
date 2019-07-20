@@ -1,0 +1,10 @@
+button {
+  display: block;
+  position: fixed;
+  background: #fcba03;
+  left: 50%;
+  top: 50%;
+  width: 50vw;
+  height: 50vh;
+  font-size: 18vh;
+}
