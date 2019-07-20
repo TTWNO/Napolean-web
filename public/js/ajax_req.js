@@ -16,3 +16,7 @@ function sendToServer(command){
 function touchLockfile(){
 	sendToServer("touch filelock.lock");
 }
+
+function decreeseBrightness(){
+	sendToServer("xbacklight -dec 10");
+}
