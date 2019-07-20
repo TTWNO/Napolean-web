@@ -8,7 +8,7 @@
 						var json = JSON.parse(this.responseText);
 						console.log("Recieved");
 						console.log(json);
-						document.getElementById("server_response").innerHTML = json;
+						document.getElementById("server_response").innerHTML = json.messege;
 					}
 				};
 				xhttp.open("POST", "/", true);
